@@ -1,7 +1,14 @@
 all: clean prepare build
 
 clean:
-
+	rm -rf bin
+	
 prepare:
-
+	mkdir bin
+	
 build:
+	gcc -Wall -O3 -pedantic -pedantic-errors -o bin/test src/main.c
+
+doc:
+	doxygen
+
