@@ -9,6 +9,9 @@ prepare:
 build:
 	gcc -Wall -O3 -pedantic -pedantic-errors -o bin/test src/main.c
 
+run:
+	./bin/test
+	
 doc:
 	doxygen
 
