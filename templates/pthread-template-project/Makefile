@@ -2,6 +2,7 @@ all: clean prepare build
 
 clean:
 	rm -rf bin
+	rm -rf docs
 	
 prepare:
 	mkdir bin
